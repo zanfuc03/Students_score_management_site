@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 *
 {
@@ -6,18 +7,38 @@
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
 }
-
+@media screen and (max-width:992px){
+    .column{
+        width:50px;
+    }
+}
+@media screen and (max-width:600px){
+    .column{
+        width:50px;
+    }
+}
+:root{
+    --width:80%;
+}
 body
 {
+    background: linear-gradient(lightblue, white , lightblue);
     position: relative;
     min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    height:100%;
+    margin:0;
+    overflow:hidden;
+    background-image: url(images/background.png) !important;
+    background-size:cover;
+    background-position: -100%;
 }
-
+html{
+    height:100%;
+}
 .navigation
 {
     position: fixed;
+    z-index:auto !important;
     top: 0;
     left: 0;
     height: 100%;
@@ -216,3 +237,92 @@ body
     width: 212px;
     left: 0;
 }
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+    text-align: center;
+  }
+foot{
+    display:flex !important;
+    margin-top: 100% !important;
+    margin-bottom: 0% !important;
+    margin-left: 50px !important;
+    text-align: center !important;
+}
+p{
+    display:flex;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+div>.table{
+    display:flex;
+    justify-content: space-between;
+    width:20%;
+    height:auto;
+    margin-left: 500px;
+    box-sizing: border-box;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.page-wrapper{
+    display:block;
+    background:white;
+    position:relative;
+    box-shadow:#11101d;
+    left: 110px;
+    z-index: -1;
+}
+.footer{
+    padding: 15px 20px;
+    background-color: rgb(187, 245, 245);
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    display:flex;
+    
+    
+}
+@keyframes move{
+    from{
+        left:30%;
+    }
+    to{
+        left:70%;
+    }
+}
+.footer > span{
+    position:relative;
+    animation: move linear 10s infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+.text-muted{
+    color:#9eabc0;
+}
+.text-center{
+    text-align: center !important;
+}
+.container{
+    width:var(--width);
+    margin: 0 auto;
+}
+.flex{
+    display:flex;
+}
+
