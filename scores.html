@@ -9,6 +9,7 @@
     <link href="images/7479646_questionnaire_survey_checklist_list_clipboard_icon.png" rel="shortcut icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen and |not|only(expressions)" href="main.css">
+    <script src="scores.js"></script>
 </head>
 <body>
     <header>
@@ -31,16 +32,89 @@
             </ul>
 
         </nav>
-        <nav class="flex space-bet">
-            <ul class="menu flex">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-
-        </nav>
     </header>
+    <div id="main">
+        <h1>STUDENT MANAGEMENT SITE</h1>
+        <form>
+            <div class="formcontent">
+                <div class="items">
+                    <div class="item">
+                        <label>Họ tên SV</label>
+                    </div>
+                    <div class="">
+                        <input type="text" id="txtHoten" class="formcontent" placeholder="Nhap ho ten sinh vien..."/>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <label>MSSV</label>
+                    </div>
+                    <div class="javascript:;">
+                        <input type="number" id="txtMssv" class="formcontent" placeholder="Nhap ma so sinh vien..."/>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <label>Ngày tháng năm sinh </label>
+                    </div>
+                    <div class="javascript:;">
+                        <input type="date" id="txtyear" class="formcontent" placeholder="Nhap ngay thang nam sinh..."/>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <label>Số điện thoại</label>
+                    </div>
+                    <div class="javascript:;">
+                        <input type="number" id="txtPhone" class="formcontent" placeholder="Nhap sdt sinh vien..."/>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <label>Email</label>
+                    </div>
+                    <div class="javascript:;">
+                        <input type="text" id="txtemail" class="formcontent" placeholder="Nhap email sinh vien..."/>
+                    </div>
+                </div>
+                <div class="flex">
+                    <select id="slLop" name="slLop">
+                        <option>Chọn Lớp</option>
+                    </select>
+                    <input type="text" id="txtLopMoi" class="formcontent" placeholder="Nhap them lop moi..." /><button>+</button>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Add" />
+                        <input type="reset" value="Delete" />
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div id="DSSinhVien">
+        <div class="row edit">
+            <div class="col">STT</div>
+            <div class="col-2">Họ tên</div>
+            <div class="col">MSSV</div>
+            <div class="col-2">Ngày tháng năm sinh</div>
+            <div class="col">SDT</div>
+            <div class="col-2">Email</div>
+            <div class="col-1">Lớp</div>
+        </div>
+
+    </div>
+    <footer class="footer text-center text-muted">
+        <span>Copyright ©2022 Trường Đại Học Mở TPHCM HCMCOU
+        <br>
+        Designed and developed by
+        <a href="javascript:;">Phúc-Bảo Company, VERSION 2022</a>
+        </span>
+    </footer>
+    <script src="js.js" type="text/javascript"></script>
 </body>
 </html>
